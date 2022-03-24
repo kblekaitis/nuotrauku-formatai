@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuotraukų formatai</title>
+</head>
+<body style="background:black; color:white">
+    <h2>JPG nuotraukos</h2>
+    <!-- object-fit:cover - kad nuotraukos butu vienodo dydzio. -->
+    <img style="object-fit:cover" src="jpg/img-1.jpg" alt="animal1" width="300" height="150">
+    <img style="object-fit:cover" src="jpg/img-2.jpg" alt="animal2" width="300" height="150">
+    <img style="object-fit:cover" src="jpg/img-3.jpg" alt="animal3" width="300" height="150">
+    <br>
+    <!-- PNG - neturi background nuotrauka. PNG formatutoti naudojama
+    object-fit:contain, nes naudojant cover nusikerpa nuotrauka, kas netinkama
+    nuotraukai, kuri nera keturkampis. stickpng.com-->
+    <h2>PNG nuotraukos</h2>
+    <img style="object-fit:contain" src="png/img-1.png" alt="animal4" width="200" height="200">
+    <img style="object-fit:contain" src="png/img-2.png" alt="animal5" width="200" height="200">
+    <img style="object-fit:contain" src="png/img-3.png" alt="animal6" width="200" height="200">
+    <br>
+    <!-- GIF formatas. giphy.com - atsisiusti su save image as...
+     Jei dydis per didelis, tai toks stilius apkarpo (jpg stilius) ir jei
+    nori islaikyti pilna gif, tada reikia padidinti.  -->
+    <img style="object-fit:cover" width="300" height="150" src="gif/run-1.gif" alt="runner1">
+    <img style="object-fit:cover" width="300" height="150" src="gif/run-2.gif" alt="runner1">
+    <img style="object-fit:cover" width="300" height="150" src="gif/run-3.gif" alt="runner1">
+    <br>
+    <!-- SVG (scalable vector graphics). Tai per koda parasomos
+    nuotraukos (gali nubraizyti per kita programa ir tada ikelti koda i html). 
+    fontawesome.com - galima atsisiusti ikonas svg formatu koda.   -->
+    <h2>SVG</h2>
+    <svg width="300" height="300">
+        <circle cx="150" cy="150" r="70" stroke="red" stroke-width="20" fill="white" />
+    </svg>
+    <br>
+    <!-- Kad gautume toki balta suni turime redaguoti svg faila pridedami fill="white" atributa. Ta pati galima gauti pridedant
+    tiesiog svg koda su ta pacia savybe i html. 
+    Per Adobe Illustrator nupaiso vaizdus ir tada programa pati sugeneruoja
+    koda, kuris ikeliamas tada (html, css, javascript). -->
+    <img width="200" src="svg/animal-1.svg" alt="dog">
+    <!-- Sudetingesnes iliustracijos - thecodingtrain.com bei p5 (JavaScript
+        biblioteka). -->
+</body>
+</html>
